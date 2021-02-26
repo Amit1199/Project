@@ -1,4 +1,4 @@
-package in.edac;
+package in.edac.controller;
 
 import java.util.List;
 
@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import in.edac.model.Patient;
+import in.edac.repository.PatientRepository;
 
 
 

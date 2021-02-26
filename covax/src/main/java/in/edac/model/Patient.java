@@ -1,4 +1,4 @@
-package in.edac;
+package in.edac.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
