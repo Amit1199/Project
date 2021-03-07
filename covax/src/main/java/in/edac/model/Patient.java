@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class Patient {
@@ -19,6 +18,9 @@ public class Patient {
 
 	@Column(nullable = false)
 	private String username;
+	
+	@Column(nullable = false)
+	private int age;
 
 	@Column(nullable = false)
 	private String password;
@@ -42,18 +44,22 @@ public class Patient {
 	private String gender;
 	
 	@Column(nullable=false)
-	private boolean isCoronaPositive;
+	private String coronaPositive;
 
 	public Patient() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Patient(String name, String username, String password, String email, String mobile, String address,
-			int aadharNo, String state, String gender, boolean isCoronaPositive) {
+	
+
+
+	public Patient(String name, String username, int age, String password, String email, String mobile, String address,
+			int aadharNo, String state, String gender, String coronaPositive) {
 		super();
 		this.name = name;
 		this.username = username;
+		this.age = age;
 		this.password = password;
 		this.email = email;
 		this.mobile = mobile;
@@ -61,7 +67,16 @@ public class Patient {
 		this.aadharNo = aadharNo;
 		this.state = state;
 		this.gender = gender;
-		this.isCoronaPositive = isCoronaPositive;
+		this.coronaPositive = coronaPositive;
+	}
+
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public int getId() {
@@ -144,14 +159,13 @@ public class Patient {
 		this.gender = gender;
 	}
 
-	public boolean isCoronaPositive() {
-		return isCoronaPositive;
+	public String getCoronaPositive() {
+		return coronaPositive;
 	}
 
-	public void setCoronaPositive(boolean isCoronaPositive) {
-		this.isCoronaPositive = isCoronaPositive;
+	public void setCoronaPositive(String coronaPositive) {
+		this.coronaPositive = coronaPositive;
 	}
 
-	
 	
 }

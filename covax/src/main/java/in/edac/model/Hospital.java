@@ -81,11 +81,11 @@ public class Hospital {
 		this.hspAdd = hspAdd;
 	}
 
-	public int getHspBNo() {
+	public int getHspCNo() {
 		return hspCNo;
 	}
 
-	public void setHspBNo(int hspBNo) {
+	public void setHspCNo(int hspBNo) {
 		this.hspCNo = hspBNo;
 	}
 
@@ -104,19 +104,6 @@ public class Hospital {
 	public void setHspPassword(String hspPassword) {
 		this.hspPassword = hspPassword;
 	}
-
-
-
-	public int getHspCNo() {
-		return hspCNo;
-	}
-
-
-
-	public void setHspCNo(int hspCNo) {
-		this.hspCNo = hspCNo;
-	}
-
 
 
 	public int getHspPin() {
